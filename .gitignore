@@ -1,7 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Java template
-
+out
 *.class
+.gradle
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
