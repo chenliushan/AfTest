@@ -1,2 +1,3 @@
 rootProject.name = 'AfTest'
 
+include ':libraries:mylibrary'

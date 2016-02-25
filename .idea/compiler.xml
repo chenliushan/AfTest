@@ -15,10 +15,10 @@
     </wildcardResourcePatterns>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
-        <sourceOutputDir name="out/production/AfTest" />
-        <sourceTestOutputDir name="out/test" />
+        <sourceOutputDir name="build/classes/main" />
+        <sourceTestOutputDir name="build/test" />
         <outputRelativeToContentRoot value="true" />
-        <option name="com.google.java.contract.classoutput" value="$PROJECT_DIR$/out/production/AfTest" />
+        <option name="com.google.java.contract.classoutput" value="$PROJECT_DIR$/build/classes/main" />
         <option name="com.google.java.contract.classpath" value="$PROJECT_DIR$/lib/cofoja.asm-1.2-20140817.jar" />
         <option name="com.google.java.contract.sourcepath" value="$PROJECT_DIR$/src" />
         <processorPath useClasspath="true" />
