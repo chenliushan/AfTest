@@ -1,4 +1,4 @@
-package polyu.comp.af;
+package polyu_af;
 
 import com.google.java.contract.Requires;
 

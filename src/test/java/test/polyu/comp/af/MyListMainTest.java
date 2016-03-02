@@ -3,7 +3,7 @@ package test.polyu.comp.af;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import polyu.comp.af.MyListMain;
+import polyu_af.MyListMain;
 
 /**
  * MyListMain Tester.

@@ -1,4 +1,4 @@
-package polyu.comp.af;
+package polyu_af;
 
 /**
  * Created by liushanchen on 16/2/19.
