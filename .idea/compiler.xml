@@ -19,7 +19,7 @@
         <sourceTestOutputDir name="build/test" />
         <outputRelativeToContentRoot value="true" />
         <option name="com.google.java.contract.classoutput" value="$PROJECT_DIR$/build/classes/main" />
-        <option name="com.google.java.contract.classpath" value="$PROJECT_DIR$/lib/cofoja.asm-1.2-20140817.jar" />
+        <option name="com.google.java.contract.classpath" value="$PROJECT_DIR$/lib/cofoja-1.3-20160207.jar" />
         <option name="com.google.java.contract.sourcepath" value="$PROJECT_DIR$/src" />
         <processorPath useClasspath="true" />
       </profile>

@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="cofoja.asm-1.2-20140817">
+  <library name="asm-all-5.0.4">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/cofoja.asm-1.2-20140817.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/asm-all-5.0.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
