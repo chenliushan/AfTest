@@ -3,6 +3,7 @@
 out
 *.class
 .gradle
+.idea/libraries
 build
 
 # Mobile Tools for Java (J2ME)
