@@ -29,7 +29,9 @@ project.ext {
 dependencies {
     compile cofoja
     compile asm
-    testCompile "junit:junit:${v.junit}", outputContractsDir
+    compile fileTree(dir: 'lib', include: '*.jar')
+//    testCompile "junit:junit:${v.junit}", outputContractsDir
+    testCompile fileTree(dir: 'lib', include: '*.jar'), outputContractsDir
 }
 
 compileJava {
@@ -49,9 +51,3 @@ task compileContracts(type: JavaCompile) {
 test {
     jvmArgs "-javaagent:lib/cofoja-1.3-20160207.jar"
 }
-
-//dependencies {
-//    compile fileTree(dir: 'lib', include: '*.jar')
-//    compile files('lib/cofoja.asm-1.2-20140817.jar')
-//    testCompile group: 'junit', name: 'junit', version: '4.11'
-//}
