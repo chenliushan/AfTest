@@ -72,4 +72,21 @@ public class MyList1 {
         storage.remove(index);
     }
 
+    public static class MyInnerClass{
+        public static String staticString;
+        private String privateString;
+        public void publicMethod(String p1){
+            String p2;
+            if(staticString.equals(privateString)){
+                p2=p1;
+            }
+        }
+        private void privateMethod(String pp1){
+            String pp2=null;
+            for(int i=0; i<0;i++){
+                pp2=pp2+pp1;
+            }
+        }
+    }
+
 }
