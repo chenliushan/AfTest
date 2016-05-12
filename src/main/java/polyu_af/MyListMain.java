@@ -10,6 +10,6 @@ public class MyListMain {
         int n = 3;
         int size = 4;
         MyList1 myList = new MyList1(size);
-        System.out.println(myList.duplicate(n).size());
+        System.out.println("duplicate size:"+myList.duplicate(n).size());
     }
 }

@@ -36,8 +36,9 @@ public class MyList1 {
         ArrayList<String> result = new ArrayList<String>(storage.size());
         idx = index;
 //        to_be_copied = Math.min(n, count() - index + 1);
-        to_be_copied = Math.min(n, count() - (index + 1));
-        while (counter <= to_be_copied) {
+        to_be_copied = Math.min(n, count() - index );
+
+        while (counter < to_be_copied) {
             extend(result, storage.get(index));
             forth();
             counter++;
