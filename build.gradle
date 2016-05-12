@@ -5,8 +5,6 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.7
-
 repositories {
     mavenCentral()
 }
@@ -30,7 +28,6 @@ dependencies {
     compile cofoja
     compile asm
     compile fileTree(dir: 'lib', include: '*.jar')
-//    testCompile "junit:junit:${v.junit}", outputContractsDir
     testCompile fileTree(dir: 'lib', include: '*.jar'), outputContractsDir
 }
 

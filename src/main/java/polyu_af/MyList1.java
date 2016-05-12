@@ -1,7 +1,6 @@
 package polyu_af;
 
 
-
 import com.google.java.contract.Requires;
 
 import java.util.ArrayList;
@@ -11,7 +10,10 @@ import java.util.ArrayList;
  */
 public class MyList1 {
 
-    private ArrayList<String> storage;
+    private static ArrayList<String> storage;
+    public static ArrayList<String> storagePublicStatic;
+    private ArrayList<String> storagePrivate;
+    public ArrayList<String> storagePublic;
     int index = 0;
 
     @Requires(" a_size > 0 ")
@@ -20,7 +22,6 @@ public class MyList1 {
         /*
         have to new object like this or the list always empty
          */
-        System.out.println("storage.size:" + storage.size());
         String g = new String();
         for (int i = 0; i < a_size; i++) {
             storage.add(g);
@@ -31,12 +32,12 @@ public class MyList1 {
     @Requires("n>1")
     public ArrayList<String> duplicate(int n) {
         int idx;
-        int to_be_copied, counter = 0;
+        int to_be_copied=0, counter = 0;
         ArrayList<String> result = new ArrayList<String>(storage.size());
         idx = index;
-        to_be_copied = Math.min(n, count() - index + 1);
-        while (counter != to_be_copied) {
-            System.out.println();
+//        to_be_copied = Math.min(n, count() - index + 1);
+        to_be_copied = Math.min(n, count() - (index + 1));
+        while (counter <= to_be_copied) {
             extend(result, storage.get(index));
             forth();
             counter++;
@@ -72,21 +73,16 @@ public class MyList1 {
         storage.remove(index);
     }
 
-    public static class MyInnerClass{
-        public static String staticString;
-        private String privateString;
-        public void publicMethod(String p1){
-            String p2;
-            if(staticString.equals(privateString)){
-                p2=p1;
-            }
-        }
-        private void privateMethod(String pp1){
-            String pp2=null;
-            for(int i=0; i<0;i++){
-                pp2=pp2+pp1;
-            }
+
+    public class MyInnerClass {
+        public void publicMethod(String p1) {
+            storagePrivate = null;
+            storage = null;
+            storagePublic = null;
+            storagePublicStatic = null;
+
         }
     }
+
 
 }

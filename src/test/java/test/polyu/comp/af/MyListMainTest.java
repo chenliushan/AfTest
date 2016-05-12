@@ -27,7 +27,6 @@ public class MyListMainTest {
      */
     @Test
     public void testMain() throws Exception {
-//TODO: Test goes here...
         MyListMain myListMain = new MyListMain();
 //    String[] arg={"6","5"};
     String[] arg={"4","5"};
