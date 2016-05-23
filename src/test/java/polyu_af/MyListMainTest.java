@@ -1,9 +1,8 @@
-package test.polyu.comp.af;
+package polyu_af;
 
-import org.junit.Test;
-import org.junit.Before;
 import org.junit.After;
-import polyu_af.MyListMain;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * MyListMain Tester.
@@ -29,7 +28,7 @@ public class MyListMainTest {
     public void testMain() throws Exception {
         MyListMain myListMain = new MyListMain();
 //    String[] arg={"6","5"};
-    String[] arg={"4","5"};
+        String[] arg = {"4", "5"};
 //        String[] arg = {"0", "0"};
         myListMain.main(arg);
     }

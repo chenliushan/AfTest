@@ -4,6 +4,11 @@ out
 *.class
 .gradle
 .idea/libraries
+.idea/workspace.xml
+.classpath
+.project
+.settings
+AfTest.iws
 build
 
 # Mobile Tools for Java (J2ME)

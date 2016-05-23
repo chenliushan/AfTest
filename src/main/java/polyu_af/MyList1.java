@@ -14,6 +14,7 @@ public class MyList1 {
     public static ArrayList<String> storagePublicStatic;
     private ArrayList<String> storagePrivate;
     public ArrayList<String> storagePublic;
+
     int index = 0;
 
     @Requires(" a_size > 0 ")
@@ -32,16 +33,17 @@ public class MyList1 {
     @Requires("n>1")
     public ArrayList<String> duplicate(int n) {
         int idx;
-        int to_be_copied=0, counter = 0;
+        int to_be_copied = 0, counter = 0;
         ArrayList<String> result = new ArrayList<String>(storage.size());
         idx = index;
 //        to_be_copied = Math.min(n, count() - index + 1);
-        to_be_copied = Math.min(n, count() - index );
+        to_be_copied = Math.min(n, count() - index);
 
         while (counter < to_be_copied) {
             extend(result, storage.get(index));
             forth();
             counter++;
+            idx = to_be_copied - counter + idx - n;
         }
         return result;
     }

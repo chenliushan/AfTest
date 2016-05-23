@@ -12,7 +12,7 @@ repositories {
 
 project.ext {
     v = [
-            junit: '4.11',
+            junit : '4.11',
             cofoja: '1.2-20140817',
     ]
 
