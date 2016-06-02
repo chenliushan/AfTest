@@ -1,4 +1,4 @@
-package polyu_af;
+package af_test;
 
 
 import com.google.java.contract.Requires;
@@ -15,7 +15,7 @@ public class MyList1 {
     private ArrayList<String> storagePrivate;
     public ArrayList<String> storagePublic;
 
-    int index = 0;
+    private int index = 0;
 
     @Requires(" a_size > 0 ")
     public MyList1(int a_size) {

@@ -1,4 +1,4 @@
-package polyu_af;
+package af_test;
 
 import org.junit.After;
 import org.junit.Before;

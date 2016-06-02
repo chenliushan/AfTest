@@ -13,7 +13,7 @@ repositories {
 project.ext {
     v = [
             junit : '4.11',
-            cofoja: '1.2-20140817',
+            cofoja: '1.3-20160207',
     ]
 
     cofoja = files('lib/cofoja-1.3-20160207.jar')

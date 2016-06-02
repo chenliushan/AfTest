@@ -1,4 +1,4 @@
-package polyu_af;
+package af_test;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -15,11 +15,11 @@ import static org.junit.Assert.assertNotNull;
  * @since <pre>五月 12, 2016</pre>
  */
 public class MyList1Test {
-    MyList1 myList = null;
+    af_test.MyList1 myList = null;
 
     @Before
     public void before() throws Exception {
-        myList = new MyList1(6);
+        myList = new af_test.MyList1(6);
     }
 
     @After
@@ -33,7 +33,8 @@ public class MyList1Test {
     public void testDuplicate() throws Exception {
         int size = myList.duplicate(5).size();
         System.out.println("duplicate size:" + size);
-        Assert.assertTrue(size == 5);
+        MyListMain.out();
+        Assert.assertTrue(size == 6);
     }
 
     /**
@@ -81,8 +82,9 @@ public class MyList1Test {
      */
     @Test
     public void testPublicMethod() throws Exception {
-        MyList1.MyInnerClass myInnerClass = myList.new MyInnerClass();
+        af_test.MyList1.MyInnerClass myInnerClass = myList.new MyInnerClass();
         myInnerClass.publicMethod("hello");
+
         assertNotNull("should be null", myInnerClass);
 //TODO: Test goes here...
     }
