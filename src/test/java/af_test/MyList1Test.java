@@ -31,7 +31,7 @@ public class MyList1Test {
      */
     @Test
     public void testDuplicate() throws Exception {
-        int size = myList.duplicate(5).size();
+        int size = myList.duplicate(0).size();
         System.out.println("duplicate size:" + size);
         MyListMain.out();
         Assert.assertTrue(size == 6);

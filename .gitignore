@@ -5,9 +5,6 @@ out
 .gradle
 .idea/libraries
 .idea/workspace.xml
-.classpath
-.project
-.settings
 AfTest.iws
 build
 
