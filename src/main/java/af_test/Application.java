@@ -8,8 +8,11 @@ public class Application {
     static int size = 4;
     public static void main(String[] arg) {
 
-        MyList1 myList = new MyList1(size);
-        System.out.println("duplicate size:" + myList.duplicate(n).size());
-        System.out.println("duplicate size:" + myList.duplicate(n).size());
+        MyList myList = new MyList();
+        myList.make(size);
+
+        System.out.println("myList size:" + myList.count());
+        System.out.println("duplicate size:" + myList.duplicate(0).count());
+        System.out.println("duplicate size:" + myList.duplicate(n).count());
     }
 }

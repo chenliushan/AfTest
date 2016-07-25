@@ -6,7 +6,8 @@ import com.google.java.contract.Requires;
 import java.util.ArrayList;
 
 /**
- * Created by liushanchen on 16/2/19.
+ * Created by liushanchen on
+ *
  */
 public class MyList {
 
