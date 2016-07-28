@@ -11,46 +11,42 @@ import java.util.ArrayList;
  */
 public class MyList {
 
-    private static ArrayList<String> storage;
+    private  ArrayList<String> storage;
 
 
     private int index = 0;
 
     @Requires(" a_size > 0 ")
-    public void make(int a_size) {
+    public  MyList(int a_size) {
         storage = new ArrayList<String>(a_size);
     }
 
-    @Requires("n > 0 && !off()")
+    @Requires("n >= 0")
     public MyList duplicate(int n) {
         int idx;
         int to_be_copied = 0, counter = 0;
-        MyList result = new MyList();
-        result.make(storage.size());
+        MyList result = new MyList(storage.size());
         idx = index;
-//        to_be_copied = Math.min(n, count() - index + 1);
-        to_be_copied = Math.min(n, count() - index);
-
+        to_be_copied = Math.min(n, this.count() - index);
         while (counter < to_be_copied) {
             result.extend(this.item());
             forth();
             counter++;
-//            idx = to_be_copied - counter + idx - n;
         }
         return result;
     }
 
-    private void start() {
+    public void start() {
         index = 0;
     }
 
     @Requires("!after()")
-    private void forth() {
+    public void forth() {
         index++;
     }
 
     public boolean after() {
-        return index + 1 >= storage.size() - 1;
+        return index + 1 >= storage.size() ;
     }
 
     @Requires("!off()")
