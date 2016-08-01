@@ -25,7 +25,6 @@ public class MyListTest {
 
     @Test
     public void testMyList() throws Exception {
-        MyList myList = new MyList(4);
         myList.extend("a");
         myList.extend("b");
         myList.extend("c");
@@ -37,14 +36,16 @@ public class MyListTest {
     }
     @Test
     public void testMyList1() throws Exception {
-        MyList myList = new MyList(4);
         myList.extend("a");
         myList.extend("b");
-        myList.extend("c");
-        myList.extend("d");
         System.out.println("size:"+myList.count());
-        MyList dupList=myList.duplicate(5);
+        MyList dupList=myList.duplicate(2);
         System.out.println("size:"+dupList.count());
+//TODO: Test goes here...
+    }
+    @Test
+    public void testMyListMake() throws Exception {
+        myList = new MyList(0);
 //TODO: Test goes here...
     }
 

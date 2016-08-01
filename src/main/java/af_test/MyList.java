@@ -41,12 +41,12 @@ public class MyList {
     }
 
     @Requires("!after()")
-    public void forth() {
+    private void forth() {
         index++;
     }
 
     public boolean after() {
-        return index + 1 >= storage.size() ;
+        return index >= storage.size() ;
     }
 
     @Requires("!off()")
