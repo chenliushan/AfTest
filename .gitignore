@@ -7,6 +7,13 @@ out
 .idea/workspace.xml
 AfTest.iws
 build
+fixja_output
+logs
+gradle
+.idea
+.settings
+.gitignore
+*.DS_Store
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -18,3 +25,5 @@ build
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+logs/
+src/test/resources/
