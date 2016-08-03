@@ -21,7 +21,7 @@ public class MyList {
         storage = new ArrayList<String>(a_size);
     }
 
-    @Requires("n >= 0")
+    @Requires("n > 0")
     public MyList duplicate(int n) {
         int idx;
         int to_be_copied = 0, counter = 0;

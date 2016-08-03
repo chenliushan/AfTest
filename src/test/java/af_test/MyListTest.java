@@ -56,7 +56,7 @@ public class MyListTest {
      */
     @Test
     public void testDuplicate() throws Exception {
-        myList.duplicate(4);
+        myList.duplicate(0);
 //TODO: Test goes here...
     }
 
