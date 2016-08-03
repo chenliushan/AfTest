@@ -29,20 +29,22 @@ public class MyListTest {
         myList.extend("b");
         myList.extend("c");
         myList.extend("d");
-        System.out.println("size:"+myList.count());
-        MyList dupList=myList.duplicate(3);
-        System.out.println("size:"+dupList.count());
+        System.out.println("size:" + myList.count());
+        MyList dupList = myList.duplicate(3);
+        System.out.println("size:" + dupList.count());
 //TODO: Test goes here...
     }
+
     @Test
     public void testMyList1() throws Exception {
         myList.extend("a");
         myList.extend("b");
-        System.out.println("size:"+myList.count());
-        MyList dupList=myList.duplicate(2);
-        System.out.println("size:"+dupList.count());
+        System.out.println("size:" + myList.count());
+        MyList dupList = myList.duplicate(2);
+        System.out.println("size:" + dupList.count());
 //TODO: Test goes here...
     }
+
     @Test
     public void testMyListMake() throws Exception {
         myList = new MyList(0);
