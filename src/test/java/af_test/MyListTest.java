@@ -24,132 +24,18 @@ public class MyListTest {
     }
 
     @Test
-    public void testMyList() throws Exception {
+    public void testDuplicateNotEmpty() throws Exception {
         myList.extend("a");
         myList.extend("b");
-        myList.extend("c");
-        myList.extend("d");
-        System.out.println("size:"+myList.count());
-        MyList dupList=myList.duplicate(3);
-        System.out.println("size:"+dupList.count());
-//TODO: Test goes here...
-    }
-    @Test
-    public void testMyList1() throws Exception {
-        myList.extend("a");
-        myList.extend("b");
-        System.out.println("size:"+myList.count());
-        MyList dupList=myList.duplicate(2);
-        System.out.println("size:"+dupList.count());
-//TODO: Test goes here...
-    }
-    @Test
-    public void testMyListMake() throws Exception {
-        myList = new MyList(0);
-//TODO: Test goes here...
+        MyList dupList=myList.duplicate(1);
     }
 
     /**
      * Method: duplicate(int n)
      */
     @Test
-    public void testDuplicate() throws Exception {
-        myList.duplicate(0);
-//TODO: Test goes here...
+    public void testDuplicateEmpty() throws Exception {
+        myList.duplicate(1);
     }
 
-    /**
-     * Method: after()
-     */
-    @Test
-    public void testAfter() throws Exception {
-        myList.after();
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: item()
-     */
-    @Test
-    public void testItem() throws Exception {
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: has(String a_item)
-     */
-    @Test
-    public void testHas() throws Exception {
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: off()
-     */
-    @Test
-    public void testOff() throws Exception {
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: count()
-     */
-    @Test
-    public void testCount() throws Exception {
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: extend(String a_item)
-     */
-    @Test
-    public void testExtend() throws Exception {
-//TODO: Test goes here... 
-    }
-
-    /**
-     * Method: remove()
-     */
-    @Test
-    public void testRemove() throws Exception {
-//TODO: Test goes here... 
-    }
-
-
-    /**
-     * Method: start()
-     */
-    @Test
-    public void testStart() throws Exception {
-//TODO: Test goes here... 
-/* 
-try { 
-   Method method = MyList.getClass().getMethod("start"); 
-   method.setAccessible(true); 
-   method.invoke(<Object>, <Parameters>); 
-} catch(NoSuchMethodException e) { 
-} catch(IllegalAccessException e) { 
-} catch(InvocationTargetException e) { 
-} 
-*/
-    }
-
-    /**
-     * Method: forth()
-     */
-    @Test
-    public void testForth() throws Exception {
-//TODO: Test goes here... 
-/* 
-try { 
-   Method method = MyList.getClass().getMethod("forth"); 
-   method.setAccessible(true); 
-   method.invoke(<Object>, <Parameters>); 
-} catch(NoSuchMethodException e) { 
-} catch(IllegalAccessException e) { 
-} catch(InvocationTargetException e) { 
-} 
-*/
-    }
-
-} 
+}
