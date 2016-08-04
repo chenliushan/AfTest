@@ -16,7 +16,7 @@ project.ext {
             cofoja: '1.3-20160207',
     ]
 
-    cofoja = files('lib/cofoja-1.3-20160207.jar')
+    cofoja = files('lib/cofoja.asm-1.3-20160207.jar')
     asm = files('lib/asm-all-5.0.4.jar')
 
     outputContractsDir = files('build/classes/main') {
@@ -40,11 +40,11 @@ task compileContracts(type: JavaCompile) {
     classpath = cofoja
     destinationDir = outputContractsDir as File
     options.compilerArgs = ['-classpath',
-                            'lib/cofoja-1.3-20160207.jar', '-processor',
+                            'lib/cofoja.asm-1.3-20160207.jar', '-processor',
                             'com.google.java.contract.core.apt.AnnotationProcessor',
                             '-proc:only']
 }
 
 test {
-    jvmArgs "-javaagent:lib/cofoja-1.3-20160207.jar"
+    jvmArgs "-javaagent:lib/cofoja.asm-1.3-20160207.jar"
 }

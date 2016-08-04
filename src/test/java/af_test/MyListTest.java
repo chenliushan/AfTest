@@ -27,12 +27,11 @@ public class MyListTest {
     public void testDuplicateNotEmpty() throws Exception {
         myList.extend("a");
         myList.extend("b");
-        MyList dupList=myList.duplicate(1);
+        myList.extend("c");
+        myList.extend("d");
+        MyList dupList = myList.duplicate(3);
     }
 
-    /**
-     * Method: duplicate(int n)
-     */
     @Test
     public void testDuplicateEmpty() throws Exception {
         myList.duplicate(1);
